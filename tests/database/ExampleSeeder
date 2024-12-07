@@ -1,0 +1,19 @@
+<?php
+
+namespace Tests\Support\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+
+class ExampleSeeder extends Seeder
+{
+    public function run()
+    {
+        $data = [
+            ['name' => 'Test1'],
+            ['name' => 'Test2'],
+            ['name' => 'Test3'],
+        ];
+
+        $this->db->table('example_table')->insertBatch($data);
+    }
+}

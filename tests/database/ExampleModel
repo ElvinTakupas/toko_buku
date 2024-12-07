@@ -1,0 +1,14 @@
+<?php
+
+namespace Tests\Support\Models;
+
+use CodeIgniter\Model;
+
+class ExampleModel extends Model
+{
+    protected $table = 'example_table';
+    protected $primaryKey = 'id';
+    protected $returnType = 'object';
+    protected $allowedFields = ['name'];
+    protected $useSoftDeletes = true;
+}
